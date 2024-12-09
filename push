@@ -13,3 +13,8 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/Divepharma/Divepharma-api.git
 git push -u origin main
+
+git add . # Esto agrega todos los archivos modificados
+git commit -m "Describa aquí los cambios realizados"
+
+git push -u origin main
