@@ -5,3 +5,11 @@ Usa git add . para preparar los cambios.
 Realiza un git commit con un mensaje.
 Sube los cambios con git push.
 ¡Tu proyecto estará sincronizado con GitHub! 🚀
+
+echo "# Divepharma-api" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Divepharma/Divepharma-api.git
+git push -u origin main
