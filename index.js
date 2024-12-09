@@ -97,6 +97,17 @@ app.get('/protected', verifyToken, (req, res) => {
   res.json({ message: `Bienvenido, usuario ${req.usuarioId}` });
 });
 
+// Nueva ruta: Obtener todos los usuarios
+app.get('/api/usuarios', async (req, res) => {
+  try {
+    const [rows] = await db.query('SELECT id_usuario, nombre_usuario, correo_usuario FROM usuarios');
+    res.json(rows);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Error interno del servidor' });
+  }
+});
+
 // Iniciar el servidor
 app.listen(port, () => {
   console.log(`Servidor corriendo en http://localhost:${port}`);

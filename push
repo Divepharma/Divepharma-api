@@ -1,0 +1,7 @@
+Si necesitas hacer cambios en el futuro, simplemente realiza los pasos siguientes:
+
+Edita tus archivos.
+Usa git add . para preparar los cambios.
+Realiza un git commit con un mensaje.
+Sube los cambios con git push.
+¡Tu proyecto estará sincronizado con GitHub! 🚀
