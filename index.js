@@ -25,7 +25,7 @@ db.connect(err => {
 const app = express();
 app.use(express.json()); // Para parsear JSON en el cuerpo de las solicitudes
 
-const port = 3000;
+const port = 5000;
 
 // Crear un usuario (registro)
 app.post('/api/registro', async (req, res) => {
