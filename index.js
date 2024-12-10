@@ -6,7 +6,7 @@ require('dotenv').config();
 
 // Crear la conexión a la base de datos
 const db = mysql.createConnection({
-  host: process.env.MYSQL_HOST, // Cambiar a MYSQL_HOST
+  host: process.env.MYSQL_PUBLIC_URL, // Cambiar a MYSQL_HOST
   user: process.env.MYSQL_USER, // Cambiar a MYSQL_USER
   password: process.env.MYSQL_PASSWORD, // Cambiar a MYSQL_PASSWORD
   database: process.env.MYSQL_DATABASE, // Cambiar a MYSQL_DATABASE
